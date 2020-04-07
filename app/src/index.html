@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>StarNotary DAPP Front End</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <style>
+            input {
+                display: block;
+                margin-bottom: 12px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>StarNotary DAPP</h1>
+            <br><label for="name">Star Name:</label><h3 id='name'>Star Name: </h3>
+            <br><br><button onclick="App.starNameFunc()">Get Star Name</button>
+            <hr>
+            <br><label for="owner">Star Owner:</label><h3 id='owner'>Star Owner: </h3>
+            <br><br><button onclick="App.starOwnerFunc()">Get Star Owner</button>
+            <br><br>
+            <hr>
+            <br>
+            <h1>Claim Star</h1>
+            <br><br><button id="claimStar" onclick="App.claimStarFunc()">Claim a Star</button>
+            <br><br>
+            <br>
+            <hr>
+            <span id="status"></span>
+            <br>
+
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
