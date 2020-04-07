@@ -42,7 +42,7 @@ it('can change star name', async () => {
     let instance = await StarNotary.deployed();
     let newName = "my Star";
     await instance.changeName(newName);
-    let changedName = await instance.starName().call();
+    let changedName = await instance.starName.call();
     assert.equal(newName, changedName);
     
 });
